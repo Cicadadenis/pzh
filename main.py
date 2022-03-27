@@ -1,6 +1,7 @@
 from datetime import datetime, date, time
 from pathlib import Path
 from os.path import exists
+from aiogram.types import CallbackQuery, Message
 import urllib.parse
 import urllib.request
 import ssl
@@ -669,7 +670,7 @@ def main():
         </body></html>
     '''
     sss = (site + site2 + site3)
-    with  open("pzh.html", "w", encoding="utf-8") as f:
+    with  open("index.html", "w", encoding="utf-8") as f:
         f.write(sss)
 
 
@@ -701,30 +702,79 @@ while True:
         texx = input("\n    Техподержка:  ")
         with open("texx.txt", "w", encoding="utf-8") as f:
             f.write(texx)
+        print("     \nКонтакт Изменен")
+        main()
+        file_to_upload = open(file, 'rb')
+        ftp.storbinary('STOR ' + file, file_to_upload)
+        ftp.close()
+        print("\n   Сайт обновлен !")
+        break
     if vib == '3':
         bbot = input("\n    Бот:  ")
         with open("bbot.txt", "w", encoding="utf-8") as f:
             f.write(bbot)
+        print("     \nКонтакт Изменен")
+        main()
+        file_to_upload = open(file, 'rb')
+        ftp.storbinary('STOR ' + file, file_to_upload)
+        ftp.close()
+        print("\n   Сайт обновлен !")
+        break
     if vib == '4':
         hyd = input("\n     Hydra: ")
         with open("hyd.txt", "w", encoding="utf-8") as f:
             f.write(hyd)
+        print("     \nКонтакт Изменен")
+        main()
+        file_to_upload = open(file, 'rb')
+        ftp.storbinary('STOR ' + file, file_to_upload)
+        ftp.close()
+        print("\n   Сайт обновлен !")
+        break
     if vib == '5':
         rab = input("\n     Работа:   ")
         with open("rab.txt", "w", encoding="utf-8") as f:
             f.write(rab)
+        print("     \nКонтакт Изменен")
+        main()
+        file_to_upload = open(file, 'rb')
+        ftp.storbinary('STOR ' + file, file_to_upload)
+        ftp.close()
+        print("\n   Сайт обновлен !")
+        break
     if vib == '6':
         rabw = input("\n    Работа WatsApp:    ")
         with open("rabw.txt", "w", encoding="utf-8") as f:
             f.write(rabw)
+        print("     \nКонтакт Изменен")
+        main()
+        file_to_upload = open(file, 'rb')
+        ftp.storbinary('STOR ' + file, file_to_upload)
+        ftp.close()
+        print("\n   Сайт обновлен !")
+        break
     if vib == '7':
         legal = input("\n   legal:   ")
         with open("legal.txt", "w", encoding="utf-8") as f:
             f.write(legal)
+        print("     \nКонтакт Изменен")
+        main()
+        file_to_upload = open(file, 'rb')
+        ftp.storbinary('STOR ' + file, file_to_upload)
+        ftp.close()
+        print("\n   Сайт обновлен !")
+        break
     if vib == '8':
         otz = input("\n     Отзывы:    ")
         with open("otz.txt", "w", encoding="utf-8") as f:
             f.write(otz)
+        print("     \nКонтакт Изменен")
+        main()
+        file_to_upload = open(file, 'rb')
+        ftp.storbinary('STOR ' + file, file_to_upload)
+        ftp.close()
+        print("\n   Сайт обновлен !")
+        break
     else:
         print("\n       Неверный Выбор")
     
