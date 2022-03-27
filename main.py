@@ -670,7 +670,7 @@ def main():
         </body></html>
     '''
     sss = (site + site2 + site3)
-    with  open("den.html", "w", encoding="utf-8") as f:
+    with  open("pzh.html", "w", encoding="utf-8") as f:
         f.write(sss)
 
 
