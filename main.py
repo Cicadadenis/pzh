@@ -13,9 +13,9 @@ ftp_user = 's220697'
 ftp_password = 'Tramadol1989!'
 ftp = ftplib.FTP(host, ftp_user, ftp_password)
 ftp.cwd("www/pzhtop.ru")
-ftp_file = 'pzh.html'
-local_file = r'pzh.html'
-file = "pzh.html"
+ftp_file = 'index.html'
+local_file = r'index.html'
+file = "index.html"
 
 oper = open("oper.txt", "r", encoding="utf-8").read()
 texx = open("texx.txt", "r", encoding="utf-8").read()
