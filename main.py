@@ -1,7 +1,6 @@
 from datetime import datetime, date, time
 from pathlib import Path
 from os.path import exists
-from aiogram.types import CallbackQuery, Message
 import urllib.parse
 import urllib.request
 import ssl
